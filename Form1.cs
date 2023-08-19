@@ -15,22 +15,36 @@ using TagLib;//Biblioteca para trabajar con metadatos de audio
 /*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 namespace ReproductorDeMusica
+
+    
 {
-    public partial class Form1 : Form
+    
+    public partial class Form1 : Form 
     {
         private IWavePlayer cancion;
         private AudioFileReader audioFile;
+        
+
 
         public Form1()
         {
             InitializeComponent();
             cancion = new WaveOutEvent();
-        }
 
+        }
+        private void TrackBarSubirVolumen_ValueChanged(object sender, EventArgs e)
+        {
+            if (cancion != null)
+            {
+                float nuevoVolumen = (float)TrackBarSubirVolumen.Value / TrackBarSubirVolumen.Maximum;
+                cancion.Volume = nuevoVolumen;
+            }
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
 
             // Agrega y carga la lista de canciones dentro de "listBoxCanciones"
+            TrackBarSubirVolumen.ValueChanged += TrackBarSubirVolumen_ValueChanged;
 
             string carpetaDeMusica = @"D:\musica"; //Almacena la ruta de nuestra musica
             string[] archivosMusica = Directory.GetFiles(carpetaDeMusica, "*.mp3");
@@ -41,10 +55,13 @@ namespace ReproductorDeMusica
                 string nombreArchivo = Path.GetFileNameWithoutExtension(archivo);
                 listBoxCanciones.Items.Add(nombreArchivo);
             }
+
         }
 
         private void btnPlay_Click(object sender, EventArgs e)
         {
+            
+            
             if (listBoxCanciones.SelectedIndex != -1)
             {
                 string selectedSong = Path.Combine(@"D:\musica", listBoxCanciones.SelectedItem + ".mp3");
@@ -59,11 +76,20 @@ namespace ReproductorDeMusica
                 cancion.Init(audioFile);
                 cancion.Play();
 
+                // Cambiar la propiedad Enabled del PictureBox para habilitar/deshabilitar el GIF
+                picture.Enabled = true;
+
                 // Carga la portada de la canción en el PictureBox
                 LoadAlbumArt(selectedSong);
+                
             }
+            else {
+                MessageBox.Show("hubo un error");
         }
+    
 
+
+}
 
         private void LoadAlbumArt(string filePath)
         {
@@ -88,6 +114,7 @@ namespace ReproductorDeMusica
         private void btnPause_Click(object sender, EventArgs e)
         {
             cancion.Pause();
+            picture.Enabled = false;
         }
 
         private void btnStop_Click(object sender, EventArgs e)
@@ -96,6 +123,7 @@ namespace ReproductorDeMusica
             {
                 cancion.Stop();
                 audioFile.Position = 0; // Se reinicia la posicion de la cancion que se esta reproduciendo desde el inicio
+                picture.Enabled = false;
             }
         }
 
@@ -118,6 +146,16 @@ namespace ReproductorDeMusica
         private void button1_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;//Minimizar
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            picture.Enabled = !picture.Enabled;
+        }
+
+        private void settings_Click(object sender, EventArgs e)
+        {
+
         }
     }
     }
