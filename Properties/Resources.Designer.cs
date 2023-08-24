@@ -73,6 +73,16 @@ namespace ReproductorDeMusica.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap desktop_wallpaper_purple_and_black_gradient_background_dark_purple_gradient {
+            get {
+                object obj = ResourceManager.GetObject("desktop_wallpaper_purple_and_black_gradient_background_dark_purple_gradient", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FocusedNeatHen_max_1mb {
             get {
                 object obj = ResourceManager.GetObject("FocusedNeatHen_max_1mb", resourceCulture);
@@ -96,6 +106,16 @@ namespace ReproductorDeMusica.Properties {
         internal static System.Drawing.Bitmap pngwing_com {
             get {
                 object obj = ResourceManager.GetObject("pngwing_com", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap simbolo_de_interfaz_de_dos_carpetas_negras {
+            get {
+                object obj = ResourceManager.GetObject("simbolo_de_interfaz_de_dos_carpetas_negras", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

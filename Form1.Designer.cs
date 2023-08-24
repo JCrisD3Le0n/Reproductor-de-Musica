@@ -39,6 +39,7 @@ namespace ReproductorDeMusica
             this.button2 = new System.Windows.Forms.Button();
             this.picture = new System.Windows.Forms.PictureBox();
             this.TrackBarSubirVolumen = new System.Windows.Forms.TrackBar();
+            this.btnConfigurarRuta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAlbumImagen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TrackBarSubirVolumen)).BeginInit();
@@ -165,6 +166,18 @@ namespace ReproductorDeMusica
             this.TrackBarSubirVolumen.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.TrackBarSubirVolumen.Value = 5;
             // 
+            // btnConfigurarRuta
+            // 
+            this.btnConfigurarRuta.BackgroundImage = global::ReproductorDeMusica.Properties.Resources.simbolo_de_interfaz_de_dos_carpetas_negras;
+            this.btnConfigurarRuta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnConfigurarRuta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnConfigurarRuta.Location = new System.Drawing.Point(1, 0);
+            this.btnConfigurarRuta.Name = "btnConfigurarRuta";
+            this.btnConfigurarRuta.Size = new System.Drawing.Size(29, 25);
+            this.btnConfigurarRuta.TabIndex = 9;
+            this.btnConfigurarRuta.UseVisualStyleBackColor = true;
+            this.btnConfigurarRuta.Click += new System.EventHandler(this.btnConfigurarRuta_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,6 +185,7 @@ namespace ReproductorDeMusica
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(630, 320);
+            this.Controls.Add(this.btnConfigurarRuta);
             this.Controls.Add(this.TrackBarSubirVolumen);
             this.Controls.Add(this.picture);
             this.Controls.Add(this.button2);
@@ -205,6 +219,7 @@ namespace ReproductorDeMusica
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox picture;
         private System.Windows.Forms.TrackBar TrackBarSubirVolumen;
+        private System.Windows.Forms.Button btnConfigurarRuta;
     }
 }
 

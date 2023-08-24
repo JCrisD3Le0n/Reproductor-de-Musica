@@ -88,3 +88,28 @@ D:\Copia de seguridad del proyecto\ReproductorDeMusica\bin\Debug\ManagedBass.xml
 D:\Copia de seguridad del proyecto\ReproductorDeMusica\bin\Debug\ManagedBass.Mix.xml
 D:\Copia de seguridad del proyecto\ReproductorDeMusica\bin\Debug\protobuf-net.xml
 D:\Copia de seguridad del proyecto\ReproductorDeMusica\obj\Debug\ReproductorDeMusica.Form2.resources
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\osx\libbass.dylib
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\osx\libbassmix.dylib
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\x64\bass.dll
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\x64\bassflac.dll
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\x64\bassmix.dll
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\x86\bass.dll
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\x86\bassflac.dll
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\x86\bassmix.dll
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\ReproductorDeMusica.exe.manifest
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\ReproductorDeMusica.application
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\Bass.Net.dll
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\CSharpVitamins.ShortGuid.dll
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\ManagedBass.dll
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\ManagedBass.Mix.dll
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\protobuf-net.dll
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\SoundFingerprinting.Audio.Bass.dll
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\SoundFingerprinting.dll
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\CSharpVitamins.ShortGuid.xml
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\ManagedBass.xml
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\ManagedBass.Mix.xml
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\bin\Debug\protobuf-net.xml
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\obj\Debug\ReproductorDeMusica.Form2.resources
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\obj\Debug\ReproductorDeMusica.exe.manifest
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\obj\Debug\ReproductorDeMusica.application
+D:\Proyecto-Reproductor-de-musica\ReproductorDeMusica\obj\Debug\ReproductorDeMusica.Form3.resources

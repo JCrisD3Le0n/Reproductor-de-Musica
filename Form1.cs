@@ -46,15 +46,6 @@ namespace ReproductorDeMusica
             // Agrega y carga la lista de canciones dentro de "listBoxCanciones"
             TrackBarSubirVolumen.ValueChanged += TrackBarSubirVolumen_ValueChanged;
 
-            string carpetaDeMusica = @"D:\musica"; //Almacena la ruta de nuestra musica
-            string[] archivosMusica = Directory.GetFiles(carpetaDeMusica, "*.mp3");
-
-            // Agrega el titulo de las canciones
-            foreach (string archivo in archivosMusica)
-            {
-                string nombreArchivo = Path.GetFileNameWithoutExtension(archivo);
-                listBoxCanciones.Items.Add(nombreArchivo);
-            }
 
         }
 
@@ -84,7 +75,7 @@ namespace ReproductorDeMusica
                 
             }
             else {
-                MessageBox.Show("hubo un error");
+                MessageBox.Show("Por favor agrega el direcctorio de tus cancionesb");
         }
     
 
@@ -157,8 +148,44 @@ namespace ReproductorDeMusica
         {
 
         }
-    }
-    }
+
+        private void btnConfigurarRuta_Click_1(object sender, EventArgs e)
+        {
+
+            using (Form3 configForm = new Form3())
+            {
+                if (configForm.ShowDialog() == DialogResult.OK )
+                {
+                    try
+                    {
+                        string nuevaRuta = configForm.RutaCanciones;
+
+                    // Actualizar la ruta de las canciones y recargar la lista
+                    string[] archivosMusica = Directory.GetFiles(nuevaRuta, "*.mp3");
+
+                    listBoxCanciones.Items.Clear();
+                    foreach (string archivo in archivosMusica)
+                    {
+                        string nombreArchivo = Path.GetFileNameWithoutExtension(archivo);
+                        listBoxCanciones.Items.Add(nombreArchivo);
+                    }
+                }
+                    catch (ArgumentException)
+                    {
+                        // Manejar la excepción en caso de que la ruta no sea válida
+                        MessageBox.Show("No agregaste ninguna ruta o es invalida :/");
+                    }
+                }
+                else {
+                   
+                    this.Close();
+                }
+                    
+                }
+            }
+        }
+}
+
 //Desarrollador: Juan De Leon 
 //Fecha de actualizacion: 18/08/2023
 

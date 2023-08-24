@@ -121,6 +121,9 @@
   <data name="alternativa" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\alternativa.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="desktop_wallpaper_purple_and_black_gradient_background_dark_purple_gradient" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\desktop-wallpaper-purple-and-black-gradient-background-dark-purple-gradient.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FocusedNeatHen_max_1mb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\FocusedNeatHen-max-1mb.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -129,5 +132,8 @@
   </data>
   <data name="pngwing_com" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngwing.com.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="simbolo_de_interfaz_de_dos_carpetas_negras" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\simbolo-de-interfaz-de-dos-carpetas-negras.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
